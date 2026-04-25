@@ -1,6 +1,6 @@
 # HexBake
 
-**Live → [hexbake.github.io](https://hexbake.github.io)**
+**Live → [subhashish-mishra.github.io/hex-bake](https://subhashish-mishra.github.io/hex-bake/)**
 
 Bake a semi-transparent overlay color into its exact solid HEX result. Zero dependencies. Pure HTML + CSS + JS.
 
