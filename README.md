@@ -1,6 +1,6 @@
 # HexBake
 
-**Live demo → [hexbake.github.io](https://hexbake.github.io)** *(update with your actual Pages URL)*
+**Live → [hexbake.github.io](https://hexbake.github.io)**
 
 Bake a semi-transparent overlay color into its exact solid HEX result. Zero dependencies. Pure HTML + CSS + JS.
 
@@ -42,7 +42,7 @@ Applied per R, G, B channel.
 ## Getting Started
 
 ```bash
-git clone https://github.com/<your-username>/HexBake.git
+git clone https://github.com/Subhashish-Mishra/hex-bake
 cd HexBake
 # Open index.html — no build step required
 ```
