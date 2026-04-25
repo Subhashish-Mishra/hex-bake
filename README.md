@@ -51,9 +51,7 @@ cd HexBake
 
 ## Deploy to GitHub Pages
 
-1. Push to `main` on GitHub
-2. **Settings → Pages → Source:** branch `main`, root `/`
-3. Live at `https://<your-username>.github.io/HexBake/`
+This project is automatically deployed to GitHub Pages on every push to the `main` branch via GitHub Actions.
 
 ---
 
