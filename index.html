@@ -5,15 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HexBake — Alpha Blending Calculator</title>
-  <meta name="description" content="HexBake calculates the exact solid color produced when a semi-transparent overlay sits over a solid background. Supports HEX, RGB, and RGBA inputs with live preview." />
-  <meta name="keywords" content="hexbake, alpha blending, color calculator, overlay, transparency, HEX, RGB, RGBA, CSS color tool" />
+  <meta name="description"
+    content="HexBake calculates the exact solid color produced when a semi-transparent overlay sits over a solid background. Supports HEX, RGB, and RGBA inputs with live preview." />
+  <meta name="keywords"
+    content="hexbake, alpha blending, color calculator, overlay, transparency, HEX, RGB, RGBA, CSS color tool" />
   <meta name="author" content="HexBake" />
   <meta property="og:title" content="HexBake — Alpha Blending Calculator" />
-  <meta property="og:description" content="Bake a semi-transparent overlay color into its resulting solid HEX value — instantly." />
+  <meta property="og:description"
+    content="Bake a semi-transparent overlay color into its resulting solid HEX value — instantly." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -27,16 +32,20 @@
     <div class="header-inner">
       <div class="brand">
         <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <rect x="2" y="8" width="16" height="16" rx="4" fill="#38bdf8" opacity="0.9"/>
-          <rect x="14" y="8" width="16" height="16" rx="4" fill="#818cf8" opacity="0.7"/>
+          <rect x="2" y="8" width="16" height="16" rx="4" fill="#38bdf8" opacity="0.9" />
+          <rect x="14" y="8" width="16" height="16" rx="4" fill="#818cf8" opacity="0.7" />
         </svg>
         <span class="brand-name">Hex<span class="brand-accent">Bake</span></span>
       </div>
       <nav class="site-nav" aria-label="Site navigation">
         <a href="#calculator" class="nav-link">Calculator</a>
         <a href="#how-it-works" class="nav-link">How It Works</a>
-        <a href="https://github.com" target="_blank" rel="noopener" class="nav-link nav-link--github" aria-label="View on GitHub">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        <a href="https://github.com/Subhashish-Mishra/hex-bake" target="_blank" rel="noopener"
+          class="nav-link nav-link--github" aria-label="View on GitHub">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+          </svg>
           GitHub
         </a>
       </nav>
@@ -52,11 +61,12 @@
           Alpha Blending Calculator
         </div>
         <h1 id="hero-heading" class="hero-title">
-          What color does<br/>
+          What color does<br />
           <span class="hero-title--gradient">your overlay</span> produce?
         </h1>
         <p class="hero-subtitle">
-          Bake a semi-transparent overlay onto any solid background and get the exact resulting HEX and RGB in real time.
+          Bake a semi-transparent overlay onto any solid background and get the exact resulting HEX and RGB in real
+          time.
         </p>
         <div class="hero-cta">
           <a href="#calculator" class="btn btn--primary">Open Calculator</a>
@@ -70,9 +80,11 @@
 
         <div class="calc-header">
           <h2 class="calc-title">Color Blender</h2>
-          <button class="btn btn--icon" id="swapBtn" title="Swap background and overlay colors" aria-label="Swap background and overlay colors">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/>
+          <button class="btn btn--icon" id="swapBtn" title="Swap background and overlay colors"
+            aria-label="Swap background and overlay colors">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4" />
             </svg>
             Swap
           </button>
@@ -84,15 +96,18 @@
             <label class="layer-label" for="bgPicker">Base Layer (Background)</label>
           </div>
           <div class="color-inputs">
-            <input type="color" id="bgPicker" value="#FF0000" aria-label="Background color picker" title="Pick background color" />
+            <input type="color" id="bgPicker" value="#FF0000" aria-label="Background color picker"
+              title="Pick background color" />
             <div class="text-inputs">
               <div class="input-group">
                 <span class="input-label">HEX</span>
-                <input type="text" id="bgHex" placeholder="#FF0000" maxlength="7" aria-label="Background HEX color value" autocomplete="off" spellcheck="false" />
+                <input type="text" id="bgHex" placeholder="#FF0000" maxlength="7"
+                  aria-label="Background HEX color value" autocomplete="off" spellcheck="false" />
               </div>
               <div class="input-group">
                 <span class="input-label">RGB</span>
-                <input type="text" id="bgRgb" placeholder="rgb(255, 0, 0)" aria-label="Background RGB color value" autocomplete="off" spellcheck="false" />
+                <input type="text" id="bgRgb" placeholder="rgb(255, 0, 0)" aria-label="Background RGB color value"
+                  autocomplete="off" spellcheck="false" />
               </div>
             </div>
           </div>
@@ -107,18 +122,22 @@
         <div class="layer-section" id="ol-section">
           <div class="layer-header">
             <div class="layer-badge layer-badge--overlay">OVERLAY</div>
-            <label class="layer-label" for="olPicker">Top Layer <span id="opacityLabel" class="opacity-tag">50% opacity</span></label>
+            <label class="layer-label" for="olPicker">Top Layer <span id="opacityLabel" class="opacity-tag">50%
+                opacity</span></label>
           </div>
           <div class="color-inputs">
-            <input type="color" id="olPicker" value="#0000FF" aria-label="Overlay color picker" title="Pick overlay color" />
+            <input type="color" id="olPicker" value="#0000FF" aria-label="Overlay color picker"
+              title="Pick overlay color" />
             <div class="text-inputs">
               <div class="input-group">
                 <span class="input-label">HEX</span>
-                <input type="text" id="olHex" placeholder="#0000FF" maxlength="7" aria-label="Overlay HEX color value" autocomplete="off" spellcheck="false" />
+                <input type="text" id="olHex" placeholder="#0000FF" maxlength="7" aria-label="Overlay HEX color value"
+                  autocomplete="off" spellcheck="false" />
               </div>
               <div class="input-group">
                 <span class="input-label">RGBA</span>
-                <input type="text" id="olRgba" placeholder="rgba(0,0,255,0.5)" aria-label="Overlay RGBA color value" autocomplete="off" spellcheck="false" />
+                <input type="text" id="olRgba" placeholder="rgba(0,0,255,0.5)" aria-label="Overlay RGBA color value"
+                  autocomplete="off" spellcheck="false" />
               </div>
             </div>
           </div>
@@ -128,7 +147,8 @@
               <span class="slider-edge-label">0%</span>
               <div class="slider-track-wrap">
                 <div class="slider-track-fill" id="sliderFill"></div>
-                <input type="range" id="olAlpha" min="0" max="1" step="0.01" value="0.5" aria-label="Overlay opacity" aria-valuemin="0" aria-valuemax="1" aria-valuenow="0.5" />
+                <input type="range" id="olAlpha" min="0" max="1" step="0.01" value="0.5" aria-label="Overlay opacity"
+                  aria-valuemin="0" aria-valuemax="1" aria-valuenow="0.5" />
               </div>
               <span class="slider-edge-label">100%</span>
               <output class="alpha-value" id="alphaPercent" for="olAlpha">50%</output>
@@ -141,16 +161,26 @@
             <div class="preview-layer" id="v-bg" aria-hidden="true"></div>
             <div class="preview-layer preview-layer--ol" id="v-ol" aria-hidden="true"></div>
             <div class="preview-label">
-              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
               Stacked View
             </div>
           </div>
           <div class="preview-arrow" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </div>
           <div class="preview-pane preview-pane--result" id="v-final" aria-label="Resulting solid color preview">
             <div class="preview-label">
-              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8v4l3 3" />
+              </svg>
               Resulting Solid
             </div>
           </div>
@@ -167,14 +197,30 @@
             </div>
           </div>
           <div class="result-actions">
-            <button class="copy-btn" id="copyHexBtn" data-target="resHex" title="Copy HEX value" aria-label="Copy HEX value">
-              <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-              <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <button class="copy-btn" id="copyHexBtn" data-target="resHex" title="Copy HEX value"
+              aria-label="Copy HEX value">
+              <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" />
+                <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+              </svg>
+              <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
               Copy HEX
             </button>
-            <button class="copy-btn" id="copyRgbBtn" data-target="resRgb" title="Copy RGB value" aria-label="Copy RGB value">
-              <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
-              <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <button class="copy-btn" id="copyRgbBtn" data-target="resRgb" title="Copy RGB value"
+              aria-label="Copy RGB value">
+              <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" />
+                <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+              </svg>
+              <svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+                stroke-width="2.5" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
               Copy RGB
             </button>
           </div>
@@ -189,7 +235,8 @@
         <p class="section-subtitle">Standard alpha compositing (Porter-Duff "over" operator) applied per channel.</p>
 
         <div class="formula-card">
-          <div class="formula-display" aria-label="Alpha blending formula: C final = C overlay times alpha plus C background times (1 minus alpha)">
+          <div class="formula-display"
+            aria-label="Alpha blending formula: C final = C overlay times alpha plus C background times (1 minus alpha)">
             <span class="formula-var formula-var--result">C<sub>final</sub></span>
             <span class="formula-op">=</span>
             <span class="formula-var formula-var--overlay">C<sub>overlay</sub></span>
@@ -201,9 +248,12 @@
             <span class="formula-group">(1 − <span class="formula-var formula-var--alpha">α</span>)</span>
           </div>
           <div class="formula-legend">
-            <div class="legend-item"><span class="legend-dot legend-dot--overlay"></span> Overlay color channel (R, G, or B)</div>
-            <div class="legend-item"><span class="legend-dot legend-dot--bg"></span> Background color channel (R, G, or B)</div>
-            <div class="legend-item"><span class="legend-dot legend-dot--alpha"></span> α — opacity value (0.0 → 1.0)</div>
+            <div class="legend-item"><span class="legend-dot legend-dot--overlay"></span> Overlay color channel (R, G,
+              or B)</div>
+            <div class="legend-item"><span class="legend-dot legend-dot--bg"></span> Background color channel (R, G, or
+              B)</div>
+            <div class="legend-item"><span class="legend-dot legend-dot--alpha"></span> α — opacity value (0.0 → 1.0)
+            </div>
           </div>
         </div>
 
@@ -211,17 +261,20 @@
           <div class="step-card">
             <div class="step-number" aria-hidden="true">01</div>
             <h3 class="step-title">Choose Your Colors</h3>
-            <p class="step-body">Enter the solid base color and the semi-transparent overlay color via the color picker, HEX, or RGB/RGBA input.</p>
+            <p class="step-body">Enter the solid base color and the semi-transparent overlay color via the color picker,
+              HEX, or RGB/RGBA input.</p>
           </div>
           <div class="step-card">
             <div class="step-number" aria-hidden="true">02</div>
             <h3 class="step-title">Set Opacity</h3>
-            <p class="step-body">Drag the alpha slider or type an opacity value directly into the RGBA field. All inputs stay in sync automatically.</p>
+            <p class="step-body">Drag the alpha slider or type an opacity value directly into the RGBA field. All inputs
+              stay in sync automatically.</p>
           </div>
           <div class="step-card">
             <div class="step-number" aria-hidden="true">03</div>
             <h3 class="step-title">Get the Solid Result</h3>
-            <p class="step-body">Alpha compositing is applied per channel (R, G, B) and the resulting flat HEX and RGB values are shown instantly.</p>
+            <p class="step-body">Alpha compositing is applied per channel (R, G, B) and the resulting flat HEX and RGB
+              values are shown instantly.</p>
           </div>
         </div>
       </div>
@@ -235,7 +288,8 @@
       <span class="footer-sep" aria-hidden="true">·</span>
       <span class="footer-copy">Bake transparency into solid color</span>
       <span class="footer-sep" aria-hidden="true">·</span>
-      <a href="https://github.com" target="_blank" rel="noopener" class="footer-link">View on GitHub</a>
+      <a href="https://github.com/Subhashish-Mishra/hex-bake" target="_blank" rel="noopener" class="footer-link">View on
+        GitHub</a>
     </div>
   </footer>
 
