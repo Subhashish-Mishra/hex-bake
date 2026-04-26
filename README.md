@@ -1,5 +1,4 @@
-<center>
-<img alt="hexbake" src="assets/logo.png" >
+![HexBake](assets/logo.png)
 
 
 ![GitHub License](https://img.shields.io/github/license/Subhashish-Mishra/hex-bake?style=flat-square&color=6366f1)
@@ -9,7 +8,6 @@
 
 **[subhashish-mishra.github.io/hex-bake](https://subhashish-mishra.github.io/hex-bake/)**
 
-</center>
 ![HexBake Hero](assets/hero.png)
 
 Bake a semi-transparent overlay color into its exact solid HEX result. Zero dependencies. Pure HTML + CSS + JS.
