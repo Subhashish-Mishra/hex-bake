@@ -1,0 +1,25 @@
+{
+  "name": "hex-bake",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Bake a semi-transparent overlay color into its exact solid HEX result via CLI.",
+  "main": "lib/blender-engine.js",
+  "bin": {
+    "hexbake": "./bin/hex-bake-cli.js"
+  },
+  "scripts": {
+    "start": "node bin/hex-bake-cli.js"
+  },
+  "keywords": [
+    "color",
+    "hex",
+    "rgb",
+    "alpha-blending",
+    "cli"
+  ],
+  "author": "Subhashish Mishra",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}
