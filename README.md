@@ -62,13 +62,36 @@ This project is automatically deployed to GitHub Pages on every push to the `mai
 
 ---
 
+## CLI Usage
+
+You can also use HexBake directly from your terminal.
+
+```bash
+# Run via npx (no install required)
+npx . "#FF0000" "#0000FF" 0.5
+
+# Or link and run locally
+npm link
+hexbake "#FF0000" "rgba(0,0,255,0.5)"
+```
+
+---
+
 ## Project Structure
 
 ```
 HexBake/
-├── index.html    # Markup & structure
-├── style.css     # Design system & component styles
-└── app.js        # Calculator logic, copy, swap, sync
+├── bin/
+│   └── hex-bake-cli.js    # CLI entry point
+├── lib/
+│   └── blender-engine.js  # Core blending logic (Shared)
+├── web/
+│   ├── app.js             # Web UI logic
+│   └── style.css          # Design system & styles
+├── assets/                # Images & branding
+├── index.html             # Main entry (Web)
+├── package.json           # CLI & logic manifest
+└── README.md              # Documentation
 ```
 
 ---
